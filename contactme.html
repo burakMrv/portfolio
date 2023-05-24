@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="contactmestyle.css">
+    <title>Contact</title>
+</head>
+<body>
+<div class="grid-container">
+  
+<div class="header" >
+ 
+    <h1>CONTACT ME</h1>
+    <i>I'm volunteer to communicate with you.</i>
+</div>
+<div class="form">
+    <form action="">
+<p>Name</p>
+<input type="text" id="fname" placeholder="Your name " required >
+<p>Surname</p>
+<input type="text" id="sname" placeholder=" Your surname" required>
+<p>Email</p>
+<input type="email" id="email" placeholder="Email address" required>
+<p>Phone</p>
+<input type="text" id="number" placeholder="Phone number" required>
+<p>Text me</p>
+<textarea id="message"  rows="8" placeholder="How can I help you"></textarea><br/>
+<button type="submit" onclick="sendMail()">SEND</button>
+</form>
+</div>
+<div class="copy">
+    <strong>copyright@ 2023</strong><br/>
+    <em>created by Burak AYAR</em>
+</div>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+    <script src="index.js"></script>
+</body>
+</html>

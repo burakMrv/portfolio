@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+  background-color: #BCD5DB;
+ }
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+   
+    
+    
+}
+
+
+
+.evolution{
+    grid-column: 1/3;
+    background-image: url("images/road.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1438px 250px;
+   
+
+
+ 
+    
+
+}
+
+.languages{
+    grid-column: 1/3;
+    
+
+    
+}
+
+
+.evolution > img{
+    width:100px;
+    margin:90px 100px 80px 100px;
+    
+   
+    
+}
+   
+   
+  /*space oluşturmak için margin özelliğini 
+  kullan sonra media queries ile tamamlamaya çalış   */
+
+  .languages > img{
+    margin:80px 100px 70px 50px;
+}
+  
+h1,li{
+    text-align: center;
+}
+
+
+@keyframes fadeShow {
+    to {
+        opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  .fade1{
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeShow linear 2s forwards 1s   ;
+    
+  }
+
+  .fade2{
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeShow linear 2s forwards 2s;
+  }
+  .fade3{
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeShow linear 2s forwards 3s;
+  }
+
+  .fade4{
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeShow linear 2s forwards 4s;
+  }
+
+  .fade5{
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeShow linear 2s forwards 5s;
+  }
+
+  
